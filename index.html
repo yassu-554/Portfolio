@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddimigari Yasaswini - Full Stack Java Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loader Section -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Yasaswini</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Reddimigari Yasaswini</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Self-driven CSE student skilled in Java, SQL, HTML, CSS, JavaScript. 
+                    Passionate about building efficient, scalable, and user-focused software solutions.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary liquid-glass" id="download-resume">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </button>
+                    <button class="btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <div class="editor-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <div class="editor-title">yasaswini_portfolio.js</div>
+                        <div class="editor-menu">
+                            <span>File</span>
+                            <span>Edit</span>
+                            <span>View</span>
+                        </div>
+                    </div>
+                    <div class="editor-content">
+                        <div class="line-numbers">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span>6</span>
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span>10</span>
+                            <span>11</span>
+                            <span>12</span>
+                            <span>13</span>
+                            <span>14</span>
+                            <span>15</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line"><span class="keyword">const</span> <span class="variable">developer</span> = {</div>
+                            <div class="code-line">  <span class="property">name</span>: <span class="string" id="typing-name">"</span><span class="cursor-code">|</span><span class="string">"</span>,</div>
+                            <div class="code-line">  <span class="property">role</span>: <span class="string">"Full Stack Java Developer"</span>,</div>
+                            <div class="code-line">  <span class="property">location</span>: <span class="string">"Bengaluru, India"</span>,</div>
+                            <div class="code-line">  <span class="property">email</span>: <span class="string">"yasaswiniyasaswini57@gmail.com"</span>,</div>
+                            <div class="code-line">  <span class="property">skills</span>: [</div>
+                            <div class="code-line">    <span class="string">"Java"</span>, <span class="string">"JavaScript"</span>, <span class="string">"SQL"</span>,</div>
+                            <div class="code-line">    <span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"React"</span></div>
+                            <div class="code-line">  ],</div>
+                            <div class="code-line">  <span class="property">education</span>: <span class="string">"CSE Student (2025)"</span>,</div>
+                            <div class="code-line">  <span class="property">passion</span>: <span class="string">"Building scalable solutions"</span>,</div>
+                            <div class="code-line">  <span class="method">getCurrentStatus</span>() {</div>
+                            <div class="code-line">    <span class="keyword">return</span> <span class="string">"Learning & Growing 🚀"</span>;</div>
+                            <div class="code-line">  }</div>
+                            <div class="code-line">};</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Here are some of my recent works</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/lms-project.jpg" alt="Learning Management System" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/yassu-554" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Learning Management System</h3>
+                        <p class="project-description">
+                            A full-stack web application that delivers end-to-end online learning functionality. 
+                            Features include dynamic course creation, quizzes, assignments, multimedia content upload, 
+                            automated email notifications, and progress analytics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/portfolio-project.jpg" alt="Portfolio Website" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/yassu-554" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            A responsive personal portfolio website showcasing my skills, projects, and experience. 
+                            Built with modern web technologies and featuring smooth animations and interactive elements.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/quiz-app.jpg" alt="Quiz Application" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/yassu-554" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Quiz Application</h3>
+                        <p class="project-description">
+                            An interactive quiz application with multiple choice questions, timer functionality, 
+                            and score tracking. Demonstrates creativity and self-learning capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Education</h2>
+                <p class="section-subtitle">My professional journey and academic background</p>
+            </div>
+            <div class="timeline">
+                <!-- Experience Items -->
+                <div class="timeline-item">
+                    <div class="timeline-marker experience-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Java Full Stack Intern</h3>
+                            <span class="timeline-date">Aug 2025 - Present</span>
+                        </div>
+                        <h4 class="timeline-company">TAP Academy, Bengaluru, Karnataka</h4>
+                        <ul class="timeline-description">
+                            <li>Learning Java, Spring Boot, JDBC, Hibernate and RESTful APIs for backend development</li>
+                            <li>Gaining hands-on experience in HTML, CSS, JavaScript and React for frontend design</li>
+                            <li>Practicing Database Management using SQL and integrating it with Java applications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker experience-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Full Stack Intern</h3>
+                            <span class="timeline-date">Dec 2024 - Apr 2025</span>
+                        </div>
+                        <h4 class="timeline-company">SkillDzire, Anantapur, AP</h4>
+                        <ul class="timeline-description">
+                            <li>Contributed to both front-end (HTML, CSS, JavaScript) and back-end (Java) development</li>
+                            <li>Ensured responsive and robust web applications</li>
+                            <li>Gained hands-on experience with database management using SQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Items -->
+                <div class="timeline-item">
+                    <div class="timeline-marker education-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Bachelor of Computer Science</h3>
+                            <span class="timeline-date">2021 - 2025</span>
+                        </div>
+                        <h4 class="timeline-company">Sri Venkateswara Institute of Technology, Anantapur, AP</h4>
+                        <p class="timeline-description">CGPA: 8.2</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker education-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Intermediate (MPC)</h3>
+                            <span class="timeline-date">2019 - 2021</span>
+                        </div>
+                        <h4 class="timeline-company">Masters Junior College, Anantapur, AP</h4>
+                        <p class="timeline-description">CGPA: 8.91</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker education-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>SSC</h3>
+                            <span class="timeline-date">2019</span>
+                        </div>
+                        <h4 class="timeline-company">Z.P High School, Venkatampalli, AP</h4>
+                        <p class="timeline-description">CGPA: 9.3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3 class="category-title">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="skill-name">SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span class="skill-name">HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span class="skill-name">CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span class="skill-name">React</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <span class="skill-name">Spring Boot</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <span class="skill-name">Hibernate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3 class="category-title">Soft Skills</h3>
+                    <div class="soft-skills">
+                        <div class="soft-skill-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Strong Communication Skills</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Analytical Thinking</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Time Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's connect and discuss opportunities</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:yasaswiniyasaswini57@gmail.com">yasaswiniyasaswini57@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+919392682870">+91 9392682870</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <span>Bengaluru, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/reddimigari-yasaswini-70b4b1336" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/yassu-554" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:yasaswiniyasaswini57@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Reddimigari Yasaswini. All rights reserved.</p>
+                <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/constants.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
